@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13f0baf9-eceb-4c15-839d-109eb7692192" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps-apps-pattern/templates/argo-temp-default-ns.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/apps-apps-pattern/templates/argo-temp-default-ns.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
