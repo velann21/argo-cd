@@ -11,6 +11,6 @@ spec:
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: guestbook
+    path: argo-temp
     repoURL: https://github.com/velann21/argo-temp
     targetRevision: HEAD
