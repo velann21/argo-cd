@@ -7,7 +7,7 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: pupmanager
+    namespace: argocd
     server: {{ .Values.spec.destination.server }}
   project: kappa
   source:
