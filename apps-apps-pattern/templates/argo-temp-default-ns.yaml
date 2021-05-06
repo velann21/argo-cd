@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: nginxdef
-  namespace: argocd
+  name: nginxdeflat
+  namespace: dsm-system
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: argocd
+    namespace: pupmanager
     server: {{ .Values.spec.destination.server }}
-  project: default
+  project: kappa
   source:
     path: argo-temp
-    repoURL: git@github.com:velann21/argo-cd.git
+    repoURL: https://github.com/velann21/argo-cd.git
     targetRevision: HEAD
