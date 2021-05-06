@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: php-apache
+  namespace: dsm-system
+  annotations:
+    argocd.argoproj.io/sync-wave: "3"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: pupmanager
+    server: {{ .Values.spec.destination.server }}
+  project: kappa
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+  source:
+    path: php-apache
+    repoURL: https://github.com/velann21/argo-cd.git
