@@ -12,10 +12,12 @@ spec:
     namespace: pupmanager
     server: {{ .Values.spec.destination.server }}
   project: kappa
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
   source:
     path: argo-temp
     repoURL: https://github.com/velann21/argo-cd.git
+    helm:
+      parameters:
+      - name: imageTag
+        value: nginx:1.14.2
+      - name: replica
+        value: 3
