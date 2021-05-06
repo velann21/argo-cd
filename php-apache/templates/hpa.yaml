@@ -1,10 +1,6 @@
 apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
-  annotations:
-    autoscaling.alpha.kubernetes.io/conditions: '[{"type":"AbleToScale","status":"True","lastTransitionTime":"2021-05-06T14:14:29Z","reason":"SucceededGetScale","message":"the
-      HPA controller was able to get the target''s current scale"},{"type":"ScalingActive","status":"False","lastTransitionTime":"2021-05-06T14:14:29Z","reason":"FailedGetResourceMetric","message":"the
-      HPA was unable to compute the replica count: missing request for cpu"}]'
   name: php-apache
   namespace: pupmanager
 spec:
