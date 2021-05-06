@@ -24,4 +24,4 @@ spec:
       - name: imageTag
         value: nginx:1.14.2
       - name: replica
-        value: 3
+        value: "3"
