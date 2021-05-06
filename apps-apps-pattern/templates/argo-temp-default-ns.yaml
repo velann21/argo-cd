@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: nginxdef
+  name: nginxdeflat
   namespace: dsm-system
   finalizers:
     - resources-finalizer.argocd.argoproj.io
